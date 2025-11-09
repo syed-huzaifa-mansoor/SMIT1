@@ -1,0 +1,220 @@
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code
+$ git init
+Initialized empty Git repository in D:/PDF & Word assignments/SMIT/VS codes/VS c
+ode/.git/
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (master)
+$ git remote add .
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (master)
+$ git remote add source https://github.com/syed-huzaifa-mansoor/SMIT1.git
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (master)
+$ git branch -M main
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git commit -m "Allah hu Akbar"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        forms pract.html
+        nune.html
+        timetable.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git add .
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   forms pract.html
+        new file:   nune.html
+        new file:   timetable.html
+
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream source main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push source main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git add empty text.txt
+fatal: pathspec 'empty' did not match any files
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git add empty.txt
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git commit -m "Allah"
+[main (root-commit) a695351] Allah
+ 4 files changed, 114 insertions(+)
+ create mode 100644 empty.txt
+ create mode 100644 forms pract.html
+ create mode 100644 nune.html
+ create mode 100644 timetable.html
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+info: please complete authentication in your browser...
+To https://github.com/syed-huzaifa-mansoor/SMIT1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+To https://github.com/syed-huzaifa-mansoor/SMIT1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/syed-huzaifa-mansoor/SMIT1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.24 KiB | 63.00 KiB/s, done.
+From https://github.com/syed-huzaifa-mansoor/SMIT1
+ * [new branch]      main       -> source/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=source/<branch> main
+
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git pull source main
+From https://github.com/syed-huzaifa-mansoor/SMIT1
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git remote -v
+source  https://github.com/syed-huzaifa-mansoor/SMIT1.git (fetch)
+source  https://github.com/syed-huzaifa-mansoor/SMIT1.git (push)
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git fetch source
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git merge source/main
+fatal: refusing to merge unrelated histories
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git merge source/main --allow-unrelated-histories
+Auto-merging timetable.html
+CONFLICT (add/add): Merge conflict in timetable.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main|MERGING)
+$ git merge source/main --allow-unrelated-histories
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main|MERGING)
+$ git add timetable.html
+warning: in the working copy of 'timetable.html', LF will be replaced by CRLF the next
+ time Git touches it
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main|MERGING)
+$ git commit
+[main cc272ba] Merge remote-tracking branch 'source/main'
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push source main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1.37 KiB | 155.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/syed-huzaifa-mansoor/SMIT1.git
+   3e943c2..cc272ba  main -> main
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git commit -m "myHuzaifa"
+On branch main
+nothing to commit, working tree clean
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git push -u source main
+branch 'main' set up to track 'source/main'.
+Everything up-to-date
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$ git pull
+Already up to date.
+
+lenovo@DESKTOP-N86R9VA MINGW64 /d/PDF & Word assignments/SMIT/VS codes/VS code (main)
+$
